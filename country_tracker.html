@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ทั่วโลก</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='country.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <!-- link google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><img src="image/logo.jpg" alt=""></a>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+ 
+        <nav class="navbar">
+            <a href="index.html">ประเทศไทย</a>
+            <a href="country_tracker.html">ทั่วโลก</a>
+            <a href="know_covid.html">ความรู้เกี่ยวกับ COVID-19</a>
+            <a href="news.html">ข่าวล่าสุด</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+    </header>
+    
+
+    <div class="container-country">
+        <h1>สถานการณ์ COVID-19 ทั่วโลก</h1>
+        <h3 id="date">Date time</h3>
+
+        <form autocomplete="off">
+            <input type="text" name="srch" id="srch" required list="countries" placeholder="ค้าหา ชื่อประเทศ">
+            <datalist id="countries">
+
+            </datalist>
+            <button>Search</button>
+        </form>
+        <h2 id="name-country">ผู้ติดเชื้อทั่วโลก</h2>
+        <div class="content-covid">
+            <div class="box-covid confirmed">
+                <p>ติดเชื้อ</p>
+                <h3>0</h3>
+                <p>0</p>
+            </div>
+
+            <div class="box-covid deaths">
+                <p>เสียชีวิต</p>
+                <h3>0</h3>
+                <p>0</p>
+            </div>
+
+            <div class="box-covid recovered">
+                <p>หายป่วย</p>
+                <h3>0</h3>
+                <p>0</p>
+            </div>
+        </div>
+
+        <div class="chart"></div>
+    </div>
+
+    <!-- link jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- link js file-->
+    <script src='country.js'></script>
+    <!-- link cdn npm -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body{
+    margin: 0 10%;
+}
+.heading{
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 10%;
+    padding: 1rem;
+}
+.prevent .box-container,.symptom .box-container{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+.prevent .box-container .box-prevent,
+.symptom .box-container .box-symptom{
+    flex: 1 1 35rem;
+    border-radius: .5rem;
+    margin: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+.prevent .box-container .box-prevent img,
+.symptom .box-container .box-symptom img{
+    height: 12rem;
+    padding: 1rem;
+}

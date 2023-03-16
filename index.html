@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ประเทศไทย</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style_covidtrack.css'>
+
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <!-- link google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="image/logo.jpg" alt=""></a>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+ 
+        <nav class="navbar">
+            <a href="index.html">ประเทศไทย</a>
+            <a href="country_tracker.html">ทั่วโลก</a>
+            <a href="know_covid.html">ความรู้เกี่ยวกับ COVID-19</a>
+            <a href="news.html">ข่าวล่าสุด</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+    </header>
+
+
+    <div class="total_case_box">
+        <div class="content_total_case">
+            <h2>ผู้ติดเชื้อทั้งหมด</h2>
+            <p style="font-size:3rem;" id="total_case">0</p>
+        </div>
+    </div>
+
+    <div class="flex-box">
+        <div class="item">
+            <div class="content content_new_case ">
+                <h2>ผู้ป่วยรายใหม่</h2>
+                <p style="font-size:2rem;" id="new_case">0</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="content content_total_recove">
+                <h2>หายป่วยทั้งหมด</h2>
+                <p style="font-size:2rem;" id="total_recove">0</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="content content_total_death">
+                <h2>ผู้เสียชีวิตทั้งหมด</h2>
+                <p style="font-size:2rem;" id="total_death">0</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="content content_new_death">
+                <h2>ผู้เสียชีวิตเพิ่ม</h2>
+                <p style="font-size:2rem;" id="new_death">0</p>
+            </div>
+        </div>
+    </div>
+
+    <table  class="province_stat" id="province_stat">
+            <tr>
+                <th>จังหวัด</th>
+                <th>ผู้ป่วยรายใหม่</th>
+                <th>ผู้ป่วยสะสม</th>
+                <th>ผู้เสียชีวิตทั้งหมด</th>
+                <th>ผู้เสียชีวิตเพิ่ม</th>
+            </tr>
+        </table>
+    <!-- link jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- link js file-->
+    <script src='scirpt_covid.js'></script>
+    <script src='script.js'></script>
+</body>
+</html>

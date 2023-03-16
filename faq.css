@@ -1,0 +1,85 @@
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+/* reset browser and pseudo class*/
+*, *:before, *:after{
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    margin-top: 9%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+}
+.container{
+    margin: 0 auto;
+    padding: 4rem;
+    width: 50rem;
+}
+.accordion a{
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction:column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 3rem 1rem 1rem;
+    border-bottom: 1px solid black;
+}
+.accordion a:hover,.accordion a:hover::after{
+    cursor: pointer;
+    color: cornflowerblue;
+}
+.accordion a:hover::after{
+    border: 1px solid turquoise;
+}
+.accordion a::after{
+    font-family: 'Ionicons';
+    content: '\f218';
+    position: absolute;
+    float: right;
+    right: 1rem;
+    font-size: 1rem;
+    color: black;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-align: center;
+}
+.accordion a.active::after{
+    font-family: 'Ionicons';
+    content: '\f209';
+}
+.accordion .answer{
+    padding: 1rem;
+    max-height: 0;
+    opacity: 0;
+    border-bottom: #e5e5e5;
+    overflow: hidden;
+    clear: both;
+}
+.accordion .answer p{
+    font-size: 1rem;
+    font-weight: 200;
+}
+.accordion .answer.active{
+    opacity: 1;
+    padding: 1rem;
+    max-height: 100%;
+}
